@@ -1,0 +1,531 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Fostr — Make something worth supporting.</title>
+<meta name="description" content="One page. One link. Anyone can support your work, in the way they already pay. Ready in two minutes." />
+<meta name="theme-color" content="#ffffff" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="icon" type="image/png" href="favicon-64.png" />
+<link rel="apple-touch-icon" href="icon-256.png" />
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body id="top">
+
+<a class="skip" href="#main">Skip to content</a>
+
+<!-- ================= NAV ================= -->
+<header class="nav" id="nav">
+  <div class="shell nav__inner">
+    <a class="brand" href="#top" aria-label="fostr me — home">
+      <img class="brand__logo" src="logo-light.png" alt="fostr me" width="560" height="299" />
+    </a>
+
+    <nav class="nav__links" aria-label="Primary">
+      <a href="#yourpage">Your page</a>
+      <a href="#simple">How it works</a>
+      <a href="#features">Features</a>
+      <a href="#pricing">Pricing</a>
+    </nav>
+
+    <div class="nav__actions">
+      <a class="navlink-quiet" href="#start">Sign in</a>
+      <a class="btn btn--primary btn--sm" href="#start">
+        Create your page
+        <svg class="btn__arrow" viewBox="0 0 14 10" fill="none" aria-hidden="true"><path d="M1 5h11m0 0L8.4 1.4M12 5 8.4 8.6" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
+      <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false" aria-controls="mobilemenu">
+        <span></span><span></span>
+      </button>
+    </div>
+  </div>
+
+  <div class="mobilemenu" id="mobilemenu">
+    <a href="#yourpage">Your page</a>
+    <a href="#simple">How it works</a>
+    <a href="#features">Features</a>
+    <a href="#pricing">Pricing</a>
+    <a class="btn btn--primary btn--block" href="#start">Create your page</a>
+  </div>
+
+  <span class="nav__progress" aria-hidden="true"><i id="progress"></i></span>
+</header>
+
+<main id="main">
+
+  <!-- ================= HERO ================= -->
+  <section class="page page--hero" aria-labelledby="hero-title">
+    <div class="shell page__inner hero">
+      <div class="hero__copy">
+        <p class="eyebrow reveal"><i></i>For people who make things</p>
+
+        <h1 class="display" id="hero-title">
+          <span class="line reveal" style="--d:80ms"><span>Make something</span></span>
+          <span class="line reveal" style="--d:180ms"><span><em>worth supporting.</em></span></span>
+        </h1>
+
+        <p class="lede reveal" style="--d:300ms">
+          One page. One link. Anyone can support your work —
+          in the way they already pay.
+        </p>
+
+        <div class="hero__cta reveal" style="--d:380ms">
+          <a class="btn btn--primary btn--lg" href="#start">
+            Create your page
+            <svg class="btn__arrow" viewBox="0 0 14 10" fill="none" aria-hidden="true"><path d="M1 5h11m0 0L8.4 1.4M12 5 8.4 8.6" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+          <a class="btn btn--quiet btn--lg" href="#story">See how it works</a>
+        </div>
+
+        <p class="micro reveal" style="--d:460ms">Free to begin · Ready in two minutes · No card</p>
+      </div>
+
+      <div class="hero__visual reveal" style="--d:240ms">
+        <div class="stage" id="stage">
+          <span class="stage__dots" aria-hidden="true"></span>
+          <span class="corners" aria-hidden="true"></span>
+
+          <svg class="arc" viewBox="0 0 520 460" fill="none" aria-hidden="true">
+            <path class="arc__path" d="M394 66C212 66 64 214 64 396" stroke="currentColor" stroke-width="1.25"/>
+            <path class="arc__ghost" d="M416 114C246 114 110 250 110 420" stroke="currentColor" stroke-width="1" stroke-dasharray="3 8"/>
+            <path class="arc__dot" d="M394 66C212 66 64 214 64 396"/>
+          </svg>
+
+          <article class="qcard qcard--in" data-float="1">
+            <span class="qcard__ava">A</span>
+            <div>
+              <p class="qcard__title">Aditi sent you <b>₹500</b></p>
+              <p class="qcard__meta">“Your comic got me through today.”</p>
+            </div>
+          </article>
+
+          <article class="qcard qcard--out" data-float="2">
+            <p class="qcard__label">Your balance</p>
+            <p class="qcard__amount"><span data-count="12.04" data-prefix="$">$12.04</span></p>
+            <p class="qcard__meta qcard__meta--mono">USDC · on Base</p>
+            <svg class="spark" viewBox="0 0 120 34" fill="none" aria-hidden="true">
+              <path class="spark__line" d="M2 30 22 24 40 27 58 16 76 19 96 8 118 4" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </article>
+
+          <span class="tick-note" data-float="3" aria-hidden="true">
+            <i class="tick-note__dot"></i> just now
+          </span>
+        </div>
+      </div>
+    </div>
+
+    <a class="scrollcue" href="#story" aria-label="Scroll">
+      <span class="scrollcue__line"></span>
+      <span class="scrollcue__text">Scroll</span>
+    </a>
+  </section>
+
+  <!-- ================= 01 · THE MOMENT ================= -->
+  <section class="page" id="story">
+    <div class="shell page__inner">
+      <header class="sechead sechead--center reveal">
+        <p class="eyebrow"><i></i>01 — The moment</p>
+        <h2 class="h2">Someone finds your work.<br><em>And wants to say thank you.</em></h2>
+        <p class="muted">It happens quietly, in the middle of an ordinary day. Fostr is simply there when it does.</p>
+      </header>
+
+      <ol class="cols">
+        <li class="col reveal" style="--d:0ms">
+          <span class="col__no">01</span>
+          <span class="glyph">
+            <svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="9" r="3.6" stroke="currentColor" stroke-width="1.3"/><path d="M5 19.5c1.2-3.4 3.8-5.2 7-5.2s5.8 1.8 7 5.2" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/></svg>
+          </span>
+          <h3>They find you</h3>
+          <p>A song, a comic, a thread at 2am. Something you made lands with someone.</p>
+        </li>
+
+        <li class="col reveal" style="--d:110ms">
+          <span class="col__no">02</span>
+          <span class="glyph">
+            <svg viewBox="0 0 24 24" fill="none"><rect x="3.2" y="6" width="17.6" height="12" rx="2.4" stroke="currentColor" stroke-width="1.3"/><path d="M3.2 10h17.6M6.6 14.2h3.2" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/></svg>
+          </span>
+          <h3>They decide</h3>
+          <p>No sign-up, no app to install. They pay the way they already pay for chai.</p>
+        </li>
+
+        <li class="col reveal" style="--d:220ms">
+          <span class="col__no">03</span>
+          <span class="glyph glyph--accent">
+            <svg viewBox="0 0 24 24" fill="none"><path d="M12 20s-7-4.2-7-9.1A3.9 3.9 0 0 1 12 8.6a3.9 3.9 0 0 1 7 2.3c0 4.9-7 9.1-7 9.1Z" stroke="currentColor" stroke-width="1.3" stroke-linejoin="round"/></svg>
+          </span>
+          <h3>It arrives</h3>
+          <p>You get a small, good ping. Then you go back to the thing you were making.</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ================= 02 · YOUR PAGE ================= -->
+  <section class="page page--paper" id="yourpage">
+    <div class="shell page__inner split">
+      <div class="split__copy">
+        <header class="sechead reveal">
+          <p class="eyebrow"><i></i>02 — Your page</p>
+          <h2 class="h2">One page.<br><em>Made to feel like you.</em></h2>
+          <p class="muted">Pick a name, write a line about what you make, choose a few amounts. That is the entire setup — then share the link anywhere you already are.</p>
+        </header>
+
+        <ul class="ticks reveal" style="--d:120ms">
+          <li><span class="tick" aria-hidden="true"></span> Your own link — <b>fostr.me/yourname</b></li>
+          <li><span class="tick" aria-hidden="true"></span> Your words, your colours, your amounts</li>
+          <li><span class="tick" aria-hidden="true"></span> Nothing for your supporters to sign up for</li>
+        </ul>
+      </div>
+
+      <div class="mockwrap reveal" style="--d:120ms">
+        <span class="callout callout--words" aria-hidden="true">your words</span>
+        <span class="callout callout--amounts" aria-hidden="true">your amounts</span>
+
+        <div class="mock" id="mock">
+          <div class="mock__bar">
+            <span class="mock__dots" aria-hidden="true"><i></i><i></i><i></i></span>
+            <span class="mock__url">fostr.me/maya</span>
+          </div>
+
+          <div class="mock__cover" aria-hidden="true"></div>
+
+          <div class="mock__body">
+            <span class="mock__ava" aria-hidden="true">M</span>
+            <p class="mock__name">Maya Rao</p>
+            <p class="mock__handle">@maya</p>
+            <p class="mock__bio">I draw small comics about big feelings. Two a week, forever.</p>
+
+            <div class="chips" role="group" aria-label="Choose an amount">
+              <button class="chip" type="button" aria-pressed="false">₹100</button>
+              <button class="chip is-on" type="button" aria-pressed="true">₹300</button>
+              <button class="chip" type="button" aria-pressed="false">₹500</button>
+            </div>
+
+            <label class="mock__field">
+              <span class="sr-only">Say something nice</span>
+              <input type="text" placeholder="Say something nice (optional)" />
+            </label>
+
+            <button class="btn btn--primary btn--block mock__btn" type="button" id="mockBtn">Support Maya</button>
+
+            <p class="mock__count">1,204 people have supported Maya</p>
+          </div>
+
+          <div class="mock__thanks" id="mockThanks" aria-hidden="true">
+            <span class="mock__thanks-ico">
+              <svg viewBox="0 0 24 24" fill="none"><path d="M6 12.6 10 16.6 18.4 8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </span>
+            <p>Sent. Maya just got a ping.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= 03 · SIMPLE ================= -->
+  <section class="page" id="simple">
+    <div class="shell page__inner split split--wide">
+      <div class="split__copy">
+        <header class="sechead reveal">
+          <p class="eyebrow"><i></i>03 — Simple</p>
+          <h2 class="h2">Getting paid<br>shouldn't be<br><em>the hard part.</em></h2>
+          <p class="muted">Two minutes from start to finish. No paperwork, no fees to begin, nothing to install — for you or for the people supporting you.</p>
+          <span class="stamp">≈ 2 minutes, once</span>
+        </header>
+      </div>
+
+      <ol class="listrows">
+        <li class="listrow reveal" style="--d:60ms">
+          <span class="listrow__no">01</span>
+          <div>
+            <h3>Claim your link</h3>
+            <p>Pick a name. fostr.me/you is yours in a few seconds.</p>
+          </div>
+        </li>
+        <li class="listrow reveal" style="--d:150ms">
+          <span class="listrow__no">02</span>
+          <div>
+            <h3>Make it yours</h3>
+            <p>A photo, a line about your work, the amounts that feel right.</p>
+          </div>
+        </li>
+        <li class="listrow reveal" style="--d:240ms">
+          <span class="listrow__no">03</span>
+          <div>
+            <h3>Share it anywhere</h3>
+            <p>Bio, newsletter, video description, group chat. That's it — you're open.</p>
+          </div>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ================= 04 · ANYWHERE ================= -->
+  <section class="page page--paper" id="anywhere">
+    <div class="shell page__inner">
+      <header class="sechead sechead--center reveal">
+        <p class="eyebrow"><i></i>04 — Anywhere</p>
+        <h2 class="h2">Meet people where they are.<br><em>You decide where you end up.</em></h2>
+        <p class="muted">They pay with whatever is already open on their phone. You receive one clean balance, with nothing to juggle.</p>
+      </header>
+
+      <div class="rails reveal" style="--d:80ms">
+        <div class="rails__box">
+          <p class="rails__cap">They pay</p>
+          <div class="rails__grid">
+            <div class="rail">
+              <span class="rail__ico">
+                <svg viewBox="0 0 24 24" fill="none"><path d="M7 3.5 15 12l-8 8.5" stroke="currentColor" stroke-width="1.3" stroke-linejoin="round"/><path d="M12 3.5 20 12l-8 8.5" stroke="currentColor" stroke-width="1.3" stroke-linejoin="round" opacity=".4"/></svg>
+              </span>
+              <span class="rail__name">UPI</span>
+            </div>
+            <div class="rail">
+              <span class="rail__ico">
+                <svg viewBox="0 0 24 24" fill="none"><rect x="3.5" y="3.5" width="7" height="7" rx="1.4" stroke="currentColor" stroke-width="1.3"/><rect x="13.5" y="3.5" width="7" height="7" rx="1.4" stroke="currentColor" stroke-width="1.3"/><rect x="3.5" y="13.5" width="7" height="7" rx="1.4" stroke="currentColor" stroke-width="1.3"/><path d="M14 14h2.6v2.6H14zM19.4 14h1.1M14 20.5h6.5V18" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/></svg>
+              </span>
+              <span class="rail__name">QR code</span>
+            </div>
+            <div class="rail">
+              <span class="rail__ico">
+                <svg viewBox="0 0 24 24" fill="none"><path d="M10 14a4 4 0 0 0 5.7 0l3-3a4 4 0 1 0-5.7-5.7L11.6 6.7" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/><path d="M14 10a4 4 0 0 0-5.7 0l-3 3A4 4 0 1 0 11 18.7l1.4-1.4" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/></svg>
+              </span>
+              <span class="rail__name">Link</span>
+            </div>
+            <div class="rail">
+              <span class="rail__ico">
+                <svg viewBox="0 0 24 24" fill="none"><circle cx="6" cy="12" r="1.5" fill="currentColor"/><circle cx="12" cy="12" r="1.5" fill="currentColor"/><circle cx="18" cy="12" r="1.5" fill="currentColor"/></svg>
+              </span>
+              <span class="rail__name">and more</span>
+            </div>
+          </div>
+        </div>
+
+        <svg class="rails__arrow" viewBox="0 0 72 12" fill="none" aria-hidden="true"><path d="M1 6h62" stroke="currentColor" stroke-width="1.2" stroke-dasharray="2 6" class="wire-anim"/><path d="m62 2.5 4 3.5-4 3.5" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+
+        <div class="rails__hub">
+          <span class="rails__hub-frame" aria-hidden="true"></span>
+          <img class="rails__hub-mark" src="icon-256.png" alt="" width="256" height="256" />
+          <span class="rails__hub-cap">fostr me</span>
+        </div>
+
+        <svg class="rails__arrow" viewBox="0 0 72 12" fill="none" aria-hidden="true"><path d="M1 6h62" stroke="currentColor" stroke-width="1.2" stroke-dasharray="2 6" class="wire-anim"/><path d="m62 2.5 4 3.5-4 3.5" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+
+        <div class="rails__out">
+          <p class="rails__cap">You receive</p>
+          <p class="rails__strong">USDC</p>
+          <p class="rails__sub">on Base</p>
+          <span class="rails__pulse" aria-hidden="true"></span>
+        </div>
+      </div>
+
+      <p class="footnote reveal" style="--d:160ms">Local ways to pay going in. One steady balance coming out.</p>
+    </div>
+  </section>
+
+  <!-- ================= 05 · MOMENTUM ================= -->
+  <section class="page" id="supports">
+    <div class="shell page__inner">
+      <header class="sechead sechead--center reveal">
+        <p class="eyebrow"><i></i>05 — Momentum</p>
+        <h2 class="h2">Small supports.<br><em>Big difference.</em></h2>
+        <p class="muted">Nobody sends a fortune. Everybody sends a little. Together it becomes the room you needed to keep going.</p>
+      </header>
+    </div>
+
+    <div class="marquee reveal" style="--d:100ms" aria-hidden="true">
+      <div class="marquee__row">
+        <div class="marquee__track">
+          <span class="note"><b>₹200</b> Bangalore <i>“Your comic got me through today.”</i></span>
+          <span class="note"><b>$10</b> São Paulo <i>“Your track has been on repeat all week.”</i></span>
+          <span class="note"><b>₹500</b> Delhi <i>“Been here since your very first post.”</i></span>
+          <span class="note"><b>£5</b> Bristol <i>“Thanks for the free one. Here's a small one.”</i></span>
+          <span class="note"><b>₹150</b> Kochi <i>“Made my morning.”</i></span>
+          <span class="note"><b>$25</b> Toronto <i>“Take the weekend off, you earned it.”</i></span>
+        </div>
+        <div class="marquee__track" aria-hidden="true">
+          <span class="note"><b>₹200</b> Bangalore <i>“Your comic got me through today.”</i></span>
+          <span class="note"><b>$10</b> São Paulo <i>“Your track has been on repeat all week.”</i></span>
+          <span class="note"><b>₹500</b> Delhi <i>“Been here since your very first post.”</i></span>
+          <span class="note"><b>£5</b> Bristol <i>“Thanks for the free one. Here's a small one.”</i></span>
+          <span class="note"><b>₹150</b> Kochi <i>“Made my morning.”</i></span>
+          <span class="note"><b>$25</b> Toronto <i>“Take the weekend off, you earned it.”</i></span>
+        </div>
+      </div>
+
+      <div class="marquee__row marquee__row--rev">
+        <div class="marquee__track">
+          <span class="note"><b>₹1,000</b> Mumbai <i>“For the late nights.”</i></span>
+          <span class="note"><b>$3</b> Manila <i>“Small but sincere.”</i></span>
+          <span class="note"><b>€8</b> Lisbon <i>“Your newsletter is the best part of Sunday.”</i></span>
+          <span class="note"><b>₹250</b> Jaipur <i>“Keep drawing, please.”</i></span>
+          <span class="note"><b>$15</b> Nairobi <i>“You helped me start mine.”</i></span>
+          <span class="note"><b>₹300</b> Pune <i>“Buy yourself a good coffee.”</i></span>
+        </div>
+        <div class="marquee__track" aria-hidden="true">
+          <span class="note"><b>₹1,000</b> Mumbai <i>“For the late nights.”</i></span>
+          <span class="note"><b>$3</b> Manila <i>“Small but sincere.”</i></span>
+          <span class="note"><b>€8</b> Lisbon <i>“Your newsletter is the best part of Sunday.”</i></span>
+          <span class="note"><b>₹250</b> Jaipur <i>“Keep drawing, please.”</i></span>
+          <span class="note"><b>$15</b> Nairobi <i>“You helped me start mine.”</i></span>
+          <span class="note"><b>₹300</b> Pune <i>“Buy yourself a good coffee.”</i></span>
+        </div>
+      </div>
+    </div>
+
+    <div class="shell">
+      <p class="footnote reveal" style="--d:200ms">₹200 today. Enough to matter by the end of the month.</p>
+    </div>
+  </section>
+
+  <!-- ================= 06 · WHAT YOU GET ================= -->
+  <section class="page page--paper" id="features">
+    <div class="shell page__inner">
+      <header class="sechead sechead--center reveal">
+        <p class="eyebrow"><i></i>06 — What you get</p>
+        <h2 class="h2">Everything you need.<br><em>Nothing you don't.</em></h2>
+        <p class="muted">The simple version is the whole version.</p>
+      </header>
+
+      <div class="matrix">
+        <article class="cell reveal" style="--d:0ms">
+          <span class="cell__no">01</span>
+          <h3>Anyone can pay</h3>
+          <p>UPI, cards, QR or a plain link. No app to download, no account to make, no friction at the moment it matters.</p>
+        </article>
+        <article class="cell reveal" style="--d:90ms">
+          <span class="cell__no">02</span>
+          <h3>Yours to shape</h3>
+          <p>Change the words, the colours and the amounts whenever the mood takes you. It's your page, not our template.</p>
+        </article>
+        <article class="cell reveal" style="--d:180ms">
+          <span class="cell__no">03</span>
+          <h3>Safe and clear</h3>
+          <p>Every support comes with a receipt, so you always know exactly what came in and from where.</p>
+        </article>
+        <article class="cell reveal" style="--d:270ms">
+          <span class="cell__no">04</span>
+          <h3>Nothing to manage</h3>
+          <p>It settles on its own. No invoices, no chasing, no spreadsheet open on a Sunday evening.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= 07 · TRUST ================= -->
+  <section class="page" id="trust">
+    <div class="shell page__inner">
+      <header class="sechead sechead--center reveal">
+        <p class="eyebrow"><i></i>07 — Company</p>
+        <h2 class="h2">Trusted by people<br><em>who make things.</em></h2>
+        <p class="muted">Artists, writers, musicians, streamers, and everyone quietly making something good.</p>
+      </header>
+
+      <div class="faces reveal" style="--d:80ms" aria-hidden="true">
+        <span style="--i:0">M</span><span style="--i:1">A</span><span style="--i:2">K</span>
+        <span style="--i:3">R</span><span style="--i:4">S</span><span style="--i:5">J</span>
+        <span style="--i:6">N</span><span style="--i:7">L</span>
+        <span class="faces__more" style="--i:8">+1K</span>
+      </div>
+
+      <dl class="stats">
+        <div class="stat reveal" style="--d:0ms">
+          <dt>Creators supported</dt>
+          <dd>1,000<span>+</span></dd>
+        </div>
+        <div class="stat reveal" style="--d:90ms">
+          <dt>Countries paying in</dt>
+          <dd>40<span>+</span></dd>
+        </div>
+        <div class="stat reveal" style="--d:180ms">
+          <dt>Time to set up</dt>
+          <dd>2<span>min</span></dd>
+        </div>
+      </dl>
+    </div>
+  </section>
+
+  <!-- ================= 08 · CTA ================= -->
+  <section class="page page--cta" id="start">
+    <div class="shell page__inner ctapage">
+      <span class="corners corners--wide" aria-hidden="true"></span>
+      <span class="dotfield" aria-hidden="true"></span>
+
+      <div class="ctapage__copy">
+        <p class="eyebrow eyebrow--center reveal"><i></i>Start today</p>
+        <h2 class="display display--sm">
+          <span class="line reveal" style="--d:80ms"><span>Go build something.</span></span>
+          <span class="line reveal" style="--d:180ms"><span><em>We'll handle the rest.</em></span></span>
+        </h2>
+        <div class="hero__cta hero__cta--center reveal" style="--d:280ms">
+          <a class="btn btn--primary btn--lg" href="#start">
+            Create your page
+            <svg class="btn__arrow" viewBox="0 0 14 10" fill="none" aria-hidden="true"><path d="M1 5h11m0 0L8.4 1.4M12 5 8.4 8.6" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+          <a class="btn btn--quiet btn--lg" href="#yourpage">See an example</a>
+        </div>
+        <p class="micro reveal" style="--d:360ms">It's free to begin. No card, no call, no contract.</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- ================= FOOTER ================= -->
+<footer class="footer" id="pricing">
+  <div class="shell">
+    <div class="footer__top">
+      <div class="footer__brand">
+        <a class="footer__mark" href="#top" aria-label="fostr me — home">
+          <img class="footer__icon" src="icon-256.png" alt="fostr me" width="256" height="256" />
+        </a>
+        <p class="footer__line">Make something worth supporting.</p>
+      </div>
+
+      <nav class="footer__cols" aria-label="Footer">
+        <div>
+          <p class="footer__head">Product</p>
+          <a href="#yourpage">Your page</a>
+          <a href="#simple">How it works</a>
+          <a href="#anywhere">Ways to pay</a>
+          <a href="#features">Features</a>
+        </div>
+        <div>
+          <p class="footer__head">Company</p>
+          <a href="#trust">About</a>
+          <a href="#supports">Stories</a>
+          <a href="#pricing">Pricing</a>
+          <a href="#start">Get started</a>
+        </div>
+        <div>
+          <p class="footer__head">Support</p>
+          <a href="#">Help centre</a>
+          <a href="#">Contact</a>
+          <a href="#">Status</a>
+          <a href="#">Privacy</a>
+        </div>
+      </nav>
+    </div>
+
+    <div class="footer__base">
+      <p class="micro">© <span id="year">2026</span> Fostr — made for people who make things.</p>
+      <div class="footer__social">
+        <a href="#" aria-label="Fostr on X">
+          <svg viewBox="0 0 24 24" fill="none"><path d="M4.6 4.6h3.6l4.1 5.5 4.7-5.5h2.4l-6 7 6.4 8.4h-3.7l-4.4-5.9-5 5.9H4.3l6.4-7.4L4.6 4.6Z" fill="currentColor"/></svg>
+        </a>
+        <a href="#" aria-label="Fostr on Instagram">
+          <svg viewBox="0 0 24 24" fill="none"><rect x="3.8" y="3.8" width="16.4" height="16.4" rx="4.8" stroke="currentColor" stroke-width="1.4"/><circle cx="12" cy="12" r="3.8" stroke="currentColor" stroke-width="1.4"/><circle cx="17.1" cy="6.9" r="1.1" fill="currentColor"/></svg>
+        </a>
+        <a href="#" aria-label="Fostr on Discord">
+          <svg viewBox="0 0 24 24" fill="none"><path d="M9.2 6.6c-2 .3-3.5.9-4.3 1.4-1.4 2.6-2 5.5-1.8 8.6 1.5 1.1 3 1.8 4.4 2.2l.9-1.6c-.5-.2-1-.5-1.5-.8 2.7 1.3 6.1 1.3 8.8 0-.5.3-1 .6-1.5.8l.9 1.6c1.4-.4 2.9-1.1 4.4-2.2.2-3.1-.4-6-1.8-8.6-.8-.5-2.3-1.1-4.3-1.4l-.5 1a13 13 0 0 0-3.2 0l-.5-1Z" stroke="currentColor" stroke-width="1.3" stroke-linejoin="round"/><circle cx="9.4" cy="13.4" r="1.1" fill="currentColor"/><circle cx="14.6" cy="13.4" r="1.1" fill="currentColor"/></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="app.js" defer></script>
+</body>
+</html>
