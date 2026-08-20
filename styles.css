@@ -188,7 +188,11 @@ main, .nav, .footer{ position:relative; z-index:1; }
 .brand:hover .brand__logo{ transform:translateY(-1px) scale(1.02); }
 .brand:active .brand__logo{ transform:translateY(0) scale(1); }
 
-.nav__links{ display:flex; gap:30px; font-size:.9rem; font-weight:450; color:var(--ink-2); }
+.nav__links{
+  position:absolute; left:50%; top:50%; transform:translate(-50%,-50%);
+  display:flex; gap:30px; font-size:.9rem; font-weight:450; color:var(--ink-2);
+  white-space:nowrap;
+}
 .nav__links a{ position:relative; padding:3px 0; transition:color .25s var(--ease); }
 .nav__links a::after{
   content:""; position:absolute; left:0; right:0; bottom:-2px; height:1px;
